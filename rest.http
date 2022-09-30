@@ -1,0 +1,52 @@
+GET http://localhost:3000/books
+Content-Type: application/json
+
+###
+GET http://localhost:3000/authors?page=1&name=Edmund
+Content-Type: application/json
+
+###
+GET http://localhost:3000/authors/1
+Content-Type: application/json
+
+###
+POST http://localhost:3000/authors
+Content-Type: application/json
+
+{
+    "name": "James Mandrek"
+}
+
+###
+PATCH  http://localhost:3000/authors/44
+Content-Type: application/json
+
+{
+    "name": "James Mervin"
+}
+
+###
+GET http://localhost:3000/users/240
+
+
+
+###
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+    "title": "New Book",
+    "type" : "Novel",
+    "authorId": 44
+}
+
+
+###
+PATCH http://localhost:3000/books/401
+Content-Type: application/json
+
+{
+    "title": "New Book 1",
+    "type" : "Novel",
+    "authorId": 44
+}
